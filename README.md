@@ -63,9 +63,9 @@ Component Preview Functions:
 
 1. Install requirements: pip install streamlit
 
-2. Save as color_converter.py
+2. Save as cmyk_app.py
 
-3. Run with: streamlit run color_converter.py
+3. Run with: streamlit run cmyk_app.py
 
 ## The app now provides a comprehensive color education tool showing:
 
