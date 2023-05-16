@@ -1,4 +1,4 @@
-# New Features Added:
+# Special Features:
 Individual Component Previews:
 
 - Added visual previews for each color component below its slider
