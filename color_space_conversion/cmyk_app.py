@@ -1,3 +1,14 @@
+###################################################################################
+#                       COLOR SPACE CONVERSION PLAYGROUND                         #
+###################################################################################
+# Author        : Shreya Lal                                                      #
+# Version       : 0.3                                                             #
+# Date          : 17/May/2023                                                     #
+# Modified By   : Shreya Lal                                                      #
+# Modified Date : 11/June/2025                                                    #
+# File Name     : cmyk_app.py                                                     # 
+###################################################################################
+
 import streamlit as st
 
 # Configure page
@@ -132,7 +143,16 @@ with tab1:
         f'<div style="height: 150px; background: rgb({r},{g},{b}); border-radius: 10px"></div>',
         unsafe_allow_html=True
     )
-    st.caption(f"RGB: ({r}, {g}, {b})")
+    #st.caption(f"RGB: ({r}, {g}, {b}) → CMYK Values: (C={c}%, M={m}%, Y={y}%, K={k}%)")
+    st.markdown(
+    f"""
+    <p style="text-align: center; color: green; font-size: 16px;">
+        RGB Values: ({r}, {g}, {b}) → CMYK Values: (C={c}%, M={m}%, Y={y}%, K={k}%)
+    </p>
+    """, 
+    unsafe_allow_html=True
+)
+
     # st.markdown(
     #     f'<div style="height: 150px; background: {hex_code}; border-radius: 10px"></div>',
     #     unsafe_allow_html=True
@@ -210,7 +230,16 @@ with tab2:
         f'<div style="height: 150px; background: rgb({r},{g},{b}); border-radius: 10px"></div>',
         unsafe_allow_html=True
     )
-    st.caption(f"CMYK: ({c}%, {m}%, {y}%, {k}%)")
+    #st.caption(f"CMYK: ({c}%, {m}%, {y}%, {k}%)")
+    st.markdown(
+    f"""
+    <p style="text-align: center; color: green; font-size: 16px;">
+        CMYK Values: (C={c}%, M={m}%, Y={y}%, K={k}%) → RGB: ({r}, {g}, {b})
+    </p>
+    """, 
+    unsafe_allow_html=True
+)
+
 
     # st.markdown(
     #     f'<div style="height: 150px; background: {hex_code}; border-radius: 10px"></div>',
