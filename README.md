@@ -1,4 +1,10 @@
-# Special Features:
+# Conversion between RGB to CMYK and vice versa (Fo educational Purpose)
+
+Streamlit app : https://rgb-cmyk-playground.streamlit.app/
+
+Check the above streamlit app to gain better understanding of the concept.
+
+## Special Features:
 Individual Component Previews:
 
 - Added visual previews for each color component below its slider
