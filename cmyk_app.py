@@ -218,7 +218,7 @@ with tab2:
     </div>
     """, unsafe_allow_html=True)
     
-    r, g, b = cmyk_to_rgb(c, m, y, k)
+    r, g, b = cmyk_to_rgb(c_val, m_val, y_val, k_val)
     hex_code = rgb_to_hex(r, g, b)
     
     st.success(f"RGB Values: R={r}, G={g}, B={b}")
@@ -234,7 +234,7 @@ with tab2:
     st.markdown(
     f"""
     <p style="text-align: center; color: green; font-size: 16px;">
-        CMYK Values: (C={c}%, M={m}%, Y={y}%, K={k}%) → RGB: ({r}, {g}, {b})
+        CMYK Values: (C={c_val}%, M={m_val}%, Y={y_val}%, K={k_val}%) → RGB: ({r}, {g}, {b})
     </p>
     """, 
     unsafe_allow_html=True
